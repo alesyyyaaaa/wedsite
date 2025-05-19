@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абонементы</title>
+  <link rel="stylesheet" href="/css1/style.css">
+  <link rel="index" href="index.html">
+</head>
+
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><img src="/img/logo1.svg" alt="Логотип компании" class="logo"></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.html">Услуги</a></li>
+                <li><a href="product.html">Абонименты</a></li>
+                <li><a href="index.html">О нас</a></li>
+                <li><a href="index.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+  <h1 class="title">АБОНЕМЕНТЫ</h1>
+  <div class="cards-container">
+    <div class="card border-blue">
+      <h2>АБОНЕМЕНТ #2</h2>
+      <ul>
+        <li>посещение в любой день и в любое время</li>
+        <li>тренажерный зал</li>
+        <li>анализ состава тела</li>
+      </ul>
+      <div class="price">2000 рублей</div>
+      <button class="btn lime"><a href="#contact">Купить</a></button>
+    </div>
+
+    <div class="card border-lime">
+      <h2>АБОНЕМЕНТ #1</h2>
+      <ul>
+        <li>посещение в любой день и в любое время</li>
+        <li>доступ для друзей</li>
+        <li>семейный доступ</li>
+        <li>тренажерный зал</li>
+        <li>анализ состава тела</li>
+        <li>бесплатные тренировки с тренером</li>
+        <li>групповые занятия</li>
+        <li>SPA-зона</li>
+      </ul>
+      <div class="price">3500 рублей</div>
+      <button class="btn blue"><a href="#contact">Купить</a></button>
+    </div>
+
+    <div class="card border-blue">
+      <h2>АБОНЕМЕНТ #3</h2>
+      <ul>
+        <li>посещение до 12:00 или после 20:00 в любой день</li>
+        <li>доступ для друзей</li>
+        <li>семейный доступ</li>
+        <li>тренажерный зал</li>
+        <li>анализ состава тела</li>
+        <li>бесплатные тренировки с тренером</li>
+        <li>SPA-зона</li>
+      </ul>
+      <div class="price">1600 рублей</div>
+      <button class="btn lime"><a href="#contact">Купить</a></button>
+    </div>
+  </div>
+
+   <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
